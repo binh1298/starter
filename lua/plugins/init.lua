@@ -17,6 +17,9 @@ return {
     enable = false,
   },
   {
+    "ms-jpq/chadtree",
+  },
+  {
   	"nvim-treesitter/nvim-treesitter",
 		opts = {
 			ensure_installed = {
