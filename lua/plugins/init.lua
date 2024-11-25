@@ -13,7 +13,22 @@ return {
     end,
   },
   {
+    "nvim-tree/nvim-tree.lua",
+    enabled = false,
+    version = "*",
+    lazy = false,
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+    },
+    config = function()
+      require("nvim-tree").setup {}
+    end,
+  },
+  {
     "ms-jpq/chadtree",
+    keys = {
+      { "<C-n>", "<cmd>CHADopen<CR>", desc = "CHADTree toggle window", silent = true },
+    }
   },
   {
 		"christoomey/vim-tmux-navigator",
