@@ -12,7 +12,10 @@ return {
       require "configs.lspconfig"
     end,
   },
-
+  {
+    "nvim-tree",
+    enable = false,
+  },
   {
   	"nvim-treesitter/nvim-treesitter",
 		opts = {
