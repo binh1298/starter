@@ -3,6 +3,7 @@ return {
   require "extra.chadtree",
   require "extra.tmux",
   require "extra.mason",
+  require "extra.base46",
   {
     "stevearc/conform.nvim",
     event = "BufWritePre", -- uncomment for format on save
