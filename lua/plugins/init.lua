@@ -1,7 +1,7 @@
 return {
-  require "extra.barbar",
   require "extra.treesitter",
   require "extra.chadtree",
+  require "extra.tmux",
   {
     "stevearc/conform.nvim",
     event = "BufWritePre", -- uncomment for format on save
@@ -26,16 +26,5 @@ return {
     config = function()
       require("nvim-tree").setup {}
     end,
-  },
-  {
-    "christoomey/vim-tmux-navigator",
-    lazy = false,
-    cmd = {
-      "TmuxNavigateLeft",
-      "TmuxNavigateDown",
-      "TmuxNavigateUp",
-      "TmuxNavigateRight",
-      "TmuxNavigatePrevious",
-    },
   },
 }
