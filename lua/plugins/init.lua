@@ -1,6 +1,7 @@
 return {
   require "lua.extra.barbar",
   require "lua.extra.treesitter",
+  require "lua.extra.chadtree",
   {
     "stevearc/conform.nvim",
     event = "BufWritePre", -- uncomment for format on save
@@ -25,10 +26,6 @@ return {
     config = function()
       require("nvim-tree").setup {}
     end,
-  },
-  {
-    "ms-jpq/chadtree",
-    lazy = false,
   },
   {
     "christoomey/vim-tmux-navigator",
