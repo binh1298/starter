@@ -18,3 +18,8 @@ map("n", "<C-j>", "<cmd>TmuxNavigateDown<cr>", { desc = "Navigate to the below p
 map("n", "<C-k>", "<cmd>TmuxNavigateUp<cr>", { desc = "Navigate to the above pane" })
 map("n", "<C-l>", "<cmd>TmuxNavigateRight<cr>", { desc = "Navigate to the right pane" })
 map("n", "<C-\\>", "<cmd>TmuxNavigatePrevious<cr>", { desc = "Navigate to the previous pane" })
+
+-- Telescope LSP mappings
+map("n", "<leader>fr", "<cmd>Telescope lsp_references<CR>", { desc = "Find all references" })
+map("n", "<leader>fi", "<cmd>Telescope lsp_implementations<CR>", { desc = "Find all implementations" })
+map("n", "<leader>fd", "<cmd>Telescope lsp_definitions<CR>", { desc = "Find all definitions" })
