@@ -7,6 +7,7 @@ return {
   require "extra.dadbod",
   require "extra.go",
   require "extra.rust",
+  require "extra.tailwind",
   {
     "stevearc/conform.nvim",
     event = "BufWritePre", -- uncomment for format on save
