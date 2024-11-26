@@ -1,7 +1,7 @@
 return {
-  require "lua.extra.barbar",
-  require "lua.extra.treesitter",
-  require "lua.extra.chadtree",
+  require "extra.barbar",
+  require "extra.treesitter",
+  require "extra.chadtree",
   {
     "stevearc/conform.nvim",
     event = "BufWritePre", -- uncomment for format on save
