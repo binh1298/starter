@@ -16,7 +16,7 @@ return {
       -- "lua-language-server",
 
       -- TS / JS
-      -- "typescript-language-server",
+      "typescript-language-server",
       -- "eslint-lsp",
       -- "prettierd",
       -- "prettier",
@@ -33,7 +33,7 @@ return {
       -- HTML CSS
       -- "css-lsp",
       -- "html-lsp",
-      -- "tailwindcss-language-server",
+      "tailwindcss-language-server",
       -- Apex
       -- "apex-language-server",
     },
