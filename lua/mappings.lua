@@ -19,11 +19,6 @@ map("n", "<C-k>", "<cmd>TmuxNavigateUp<cr>", { desc = "Navigate to the above pan
 map("n", "<C-l>", "<cmd>TmuxNavigateRight<cr>", { desc = "Navigate to the right pane" })
 map("n", "<C-\\>", "<cmd>TmuxNavigatePrevious<cr>", { desc = "Navigate to the previous pane" })
 
--- Telescope LSP mappings
-map("n", "<leader>fr", "<cmd>Telescope lsp_references<CR>", { desc = "Find all references" })
-map("n", "<leader>fi", "<cmd>Telescope lsp_implementations<CR>", { desc = "Find all implementations" })
-map("n", "<leader>fd", "<cmd>Telescope lsp_definitions<CR>", { desc = "Find all definitions" })
-
 map("i", "<C-s>", "<Esc> <C-s> <cmd> w <CR>", { desc = "Save file & Exit Input Mode" })
 
 map(
@@ -34,3 +29,6 @@ map(
 )
 
 map("n", "<leader>h", "<cmd> lua vim.lsp.buf.hover()<CR>", { desc = "Hover" })
+
+map("n", "<leader>fdf", "<cmd> Telescope dir find_files<CR>", { desc = "Find files in directory" })
+map("n", "<leader>fdw", "<cmd> Telescope dir live_grep<CR>", { desc = "Find words in directory" })
