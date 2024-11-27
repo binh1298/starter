@@ -25,3 +25,12 @@ map("n", "<leader>fi", "<cmd>Telescope lsp_implementations<CR>", { desc = "Find 
 map("n", "<leader>fd", "<cmd>Telescope lsp_definitions<CR>", { desc = "Find all definitions" })
 
 map("i", "<C-s>", "<Esc> <C-s> <cmd> w <CR>", { desc = "Save file & Exit Input Mode" })
+
+map(
+  "n",
+  "<leader>fl",
+  "<cmd>lua vim.diagnostic.open_float(nil, { focus = false, scope = 'cursor' })<CR>",
+  { desc = "Floating diagnostics" }
+)
+
+map("n", "<leader>h", "<cmd> lua vim.lsp.buf.hover()<CR>", { desc = "Hover" })
