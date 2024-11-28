@@ -32,3 +32,7 @@ map("n", "<leader>h", "<cmd> lua vim.lsp.buf.hover()<CR>", { desc = "Hover" })
 
 map("n", "<leader>fdf", "<cmd> Telescope dir find_files<CR>", { desc = "Find files in directory" })
 map("n", "<leader>fdw", "<cmd> Telescope dir live_grep<CR>", { desc = "Find words in directory" })
+
+vim.api.nvim_set_keymap("i", "<C-Space>", "<C-x><C-o>", { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap("i", "<C-@>", "<C-Space>", { noremap = true, silent = true })
