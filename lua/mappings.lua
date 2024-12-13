@@ -32,3 +32,8 @@ map("n", "<leader>h", "<cmd> lua vim.lsp.buf.hover()<CR>", { desc = "Hover" })
 
 map("n", "<leader>fdf", "<cmd> Telescope dir find_files<CR>", { desc = "Find files in directory" })
 map("n", "<leader>fdw", "<cmd> Telescope dir live_grep<CR>", { desc = "Find words in directory" })
+
+-- Telescope LSP mappings
+map("n", "<leader>fgr", "<cmd>Telescope lsp_references<CR>", { desc = "Find all references" })
+map("n", "<leader>fgi", "<cmd>Telescope lsp_implementations<CR>", { desc = "Find all implementations" })
+map("n", "<leader>fgd", "<cmd>Telescope lsp_definitions<CR>", { desc = "Find all definitions" })
