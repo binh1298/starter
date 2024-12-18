@@ -14,19 +14,16 @@ return {
     -- conflict with copilot
     opts.mapping["<Tab>"] = nil
     opts.mapping["S-<Tab>"] = nil
-    --
-    -- -- rust
-    -- local M = {
-    --   sources = {
-    --     { name = "nvim_lsp", group_index = 2 },
-    --     -- { name = "copilot", group_index = 2 },
-    --     { name = "luasnip", group_index = 2 },
-    --     { name = "buffer", group_index = 2 },
-    --     { name = "nvim_lua", group_index = 2 },
-    --     { name = "path", group_index = 2 },
-    --     { name = "crates", group_index = 2 },
-    --   },
-    -- }
-    -- return M
+
+    opts.sources = {
+      { name = "nvim_lua" },
+      { name = "nvim_lsp" },
+      { name = "luasnip" },
+      { name = "vim-dadbod-completion" },
+      { name = "path" },
+      { name = "buffer", keyword_length = 5 },
+      { name = "luasnip", group_index = 2 },
+      { name = "crates", group_index = 2 },
+    }
   end,
 }
