@@ -6,14 +6,9 @@ return {
     -- add any opts here
     -- for example
   provider = "ollama",
-  vendors = {
-    ollama = {
-      __inherited_from = "openai",
-      api_key_name = "",
-      endpoint = "http://127.0.0.1:11434/v1",
-      model = "deepseek-coder-v2:16b-fixed",
-      disable_tools = true, -- Open-source models often do not support tools.
-    },
+  ollama = {
+    endpoint = "http://127.0.0.1:11434", -- Note that there is no /v1 at the end.
+    model = "deepseek-coder-v2:16b-fixed",
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
   build = "make",
