@@ -8,7 +8,6 @@ return {
   require "extra.go",
   require "extra.rust",
   require "extra.tailwind",
-  require "extra.avante",
   {
     "stevearc/conform.nvim",
     event = "BufWritePre", -- uncomment for format on save
@@ -85,4 +84,5 @@ return {
     "nvim-tree/nvim-tree.lua",
     dependencies = { "3rd/image.nvim" },
   },
+  require "extra.avante",
 }
