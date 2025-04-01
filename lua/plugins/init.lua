@@ -9,6 +9,10 @@ return {
   require "extra.rust",
   require "extra.tailwind",
   {
+    "MunifTanjim/nui.nvim",
+  },
+  require "extra.avante",
+  {
     "stevearc/conform.nvim",
     event = "BufWritePre", -- uncomment for format on save
     opts = require "extra.conform",
@@ -84,5 +88,4 @@ return {
     "nvim-tree/nvim-tree.lua",
     dependencies = { "3rd/image.nvim" },
   },
-  require "extra.avante",
 }
