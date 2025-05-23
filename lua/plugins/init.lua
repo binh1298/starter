@@ -41,13 +41,13 @@ return {
       require("nvim-tree").setup {}
     end,
   },
-  {
-    "supermaven-inc/supermaven-nvim",
-    event = "InsertEnter",
-    config = function()
-      require("supermaven-nvim").setup {}
-    end,
-  },
+  -- {
+  --   "supermaven-inc/supermaven-nvim",
+  --   event = "InsertEnter",
+  --   config = function()
+  --     require("supermaven-nvim").setup {}
+  --   end,
+  -- },
   {
     "copilotlsp-nvim/copilot-lsp",
     init = function()
