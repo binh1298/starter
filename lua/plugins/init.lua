@@ -11,7 +11,7 @@ return {
   {
     "MunifTanjim/nui.nvim",
   },
-  require "extra.avante",
+  -- require "extra.avante",
   {
     "stevearc/conform.nvim",
     event = "BufWritePre", -- uncomment for format on save
