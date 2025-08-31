@@ -45,26 +45,26 @@ return {
       require("nvim-tree").setup {}
     end,
   },
-  -- {
-  --   "supermaven-inc/supermaven-nvim",
-  --   event = "InsertEnter",
-  --   config = function()
-  --     require("supermaven-nvim").setup {}
-  --   end,
-  -- },
   {
-    "zbirenbaum/copilot.lua",
-    cmd = "Copilot",
+    "supermaven-inc/supermaven-nvim",
     event = "InsertEnter",
-    opts = {
-      suggestion = { enabled = false },
-      panel = { enabled = false },
-      filetypes = {
-        markdown = true,
-        help = true,
-      },
-    },
+    config = function()
+      require("supermaven-nvim").setup {}
+    end,
   },
+  -- {
+  --   "zbirenbaum/copilot.lua",
+  --   cmd = "Copilot",
+  --   event = "InsertEnter",
+  --   opts = {
+  --     suggestion = { enabled = false },
+  --     panel = { enabled = false },
+  --     filetypes = {
+  --       markdown = true,
+  --       help = true,
+  --     },
+  --   },
+  -- },
   {
     "saghen/blink.cmp",
     optional = true,
